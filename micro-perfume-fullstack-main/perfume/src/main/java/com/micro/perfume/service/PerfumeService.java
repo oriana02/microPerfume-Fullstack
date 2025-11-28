@@ -4,7 +4,6 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 import com.micro.perfume.model.Perfume;
 import com.micro.perfume.model.dto.PerfumeCrearDTO;
-import com.micro.perfume.model.dto.perfumeCrearDTO;
 import com.micro.perfume.repository.PerfumeRepository;
 
 @Service
@@ -41,7 +40,7 @@ public class PerfumeService {
         perfume.setMasVendido(dto.isMasVendido());
         perfume.setNuevo(dto.isNuevo());
         perfume.setOferta(dto.isOferta());
-        
+
         return perfumeRepository.save(perfume);
     }
 
