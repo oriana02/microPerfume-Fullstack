@@ -20,7 +20,7 @@ import com.micro.perfume.model.dto.PerfumeCrearDTO;
 
 @RestController
 @RequestMapping("/api/perfumes")
-@CrossOrigin(origins = "*")
+//@CrossOrigin(origins = "*")
 public class PerfumeController {
 
     @Autowired
